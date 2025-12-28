@@ -6,7 +6,7 @@
 	<packaging>pom</packaging>
 
 	<name>Java FLAC Codec</name>
-	<version>1.5.3-SNAPSHOT</version>
+	<version>1.6</version>
 	<description>jFLAC is a port of the Free Lossless Audio Codec (FLAC) library to Java. This allows Java developers to write programs that use the FLAC files and the FLAC algorithms.</description>
 
 	<url>http://jflac.org/</url>
@@ -18,7 +18,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.6</java.version>
+		<java.version>21</java.version>
 	</properties>
 
 	<inceptionYear>2004</inceptionYear>
@@ -95,7 +95,7 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.14.1</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
@@ -103,9 +103,9 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.4</version>
+				<version>3.12.0</version>
 				<configuration>
-					<additionalparam>-Xdoclint:none</additionalparam>
+					<additionalOptions>-Xdoclint:none</additionalOptions>
 				</configuration>
 				<executions>
 					<execution>
